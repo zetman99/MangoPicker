@@ -10,9 +10,17 @@
 
 @implementation AppDelegate
 
+@synthesize dataManager = _dataManager;
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // dataManager create
+    _dataManager = [[ZFDataManager alloc] init];
+
+    
     return YES;
 }
 							

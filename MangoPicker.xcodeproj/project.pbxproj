@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE96D75E1755D76100033D74 /* DetailBenefitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE96D75D1755D76100033D74 /* DetailBenefitViewController.m */; };
+		BE96D76417573C6700033D74 /* EditBenefitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE96D76317573C6700033D74 /* EditBenefitViewController.m */; };
 		BEFBBF5F174C64BD00994175 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFBBF5E174C64BD00994175 /* UIKit.framework */; };
 		BEFBBF61174C64BD00994175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFBBF60174C64BD00994175 /* Foundation.framework */; };
 		BEFBBF63174C64BD00994175 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFBBF62174C64BD00994175 /* CoreGraphics.framework */; };
@@ -22,10 +24,20 @@
 		BEFBBF7F174C64BD00994175 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF7E174C64BD00994175 /* first@2x.png */; };
 		BEFBBF82174C64BD00994175 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFBBF81174C64BD00994175 /* SecondViewController.m */; };
 		BEFBBF84174C64BD00994175 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF83174C64BD00994175 /* second.png */; };
-		BEFBBF86174C64BD00994175 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF85174C64BD00994175 /* second@2x.png */; };
+		BEFF428017530653004E4394 /* ZFDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFF427F17530653004E4394 /* ZFDataManager.m */; };
+		BEFF4282175328A9004E4394 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFF4281175328A9004E4394 /* second@2x.png */; };
+		BEFF428617532C4C004E4394 /* BenefitListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFF428517532C4C004E4394 /* BenefitListViewController.m */; };
+		BEFF428917533066004E4394 /* BenefitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFF428817533066004E4394 /* BenefitCell.m */; };
+		BEFF428C175334C2004E4394 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFF428A175334B0004E4394 /* CoreData.framework */; };
+		BEFF428F175345DB004E4394 /* MangoPickerDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEFF428D175345DB004E4394 /* MangoPickerDB.xcdatamodeld */; };
+		BEFF42951753536D004E4394 /* Benefit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFF42941753536D004E4394 /* Benefit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE96D75C1755D76100033D74 /* DetailBenefitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailBenefitViewController.h; sourceTree = "<group>"; };
+		BE96D75D1755D76100033D74 /* DetailBenefitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailBenefitViewController.m; sourceTree = "<group>"; };
+		BE96D76217573C6700033D74 /* EditBenefitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBenefitViewController.h; sourceTree = "<group>"; };
+		BE96D76317573C6700033D74 /* EditBenefitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBenefitViewController.m; sourceTree = "<group>"; };
 		BEFBBF5B174C64BD00994175 /* MangoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFBBF5E174C64BD00994175 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEFBBF60174C64BD00994175 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,7 +59,17 @@
 		BEFBBF80174C64BD00994175 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BEFBBF81174C64BD00994175 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BEFBBF83174C64BD00994175 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		BEFBBF85174C64BD00994175 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BEFF427E17530653004E4394 /* ZFDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDataManager.h; sourceTree = "<group>"; };
+		BEFF427F17530653004E4394 /* ZFDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDataManager.m; sourceTree = "<group>"; };
+		BEFF4281175328A9004E4394 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		BEFF428417532C4C004E4394 /* BenefitListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitListViewController.h; sourceTree = "<group>"; };
+		BEFF428517532C4C004E4394 /* BenefitListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitListViewController.m; sourceTree = "<group>"; };
+		BEFF428717533066004E4394 /* BenefitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenefitCell.h; sourceTree = "<group>"; };
+		BEFF428817533066004E4394 /* BenefitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenefitCell.m; sourceTree = "<group>"; };
+		BEFF428A175334B0004E4394 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEFF428E175345DB004E4394 /* MangoPickerDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MangoPickerDB.xcdatamodel; sourceTree = "<group>"; };
+		BEFF42931753536D004E4394 /* Benefit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Benefit.h; path = ../Benefit.h; sourceTree = "<group>"; };
+		BEFF42941753536D004E4394 /* Benefit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Benefit.m; path = ../Benefit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +79,7 @@
 			files = (
 				BEFBBF5F174C64BD00994175 /* UIKit.framework in Frameworks */,
 				BEFBBF61174C64BD00994175 /* Foundation.framework in Frameworks */,
+				BEFF428C175334C2004E4394 /* CoreData.framework in Frameworks */,
 				BEFBBF63174C64BD00994175 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +107,7 @@
 		BEFBBF5D174C64BD00994175 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEFF428A175334B0004E4394 /* CoreData.framework */,
 				BEFBBF5E174C64BD00994175 /* UIKit.framework */,
 				BEFBBF60174C64BD00994175 /* Foundation.framework */,
 				BEFBBF62174C64BD00994175 /* CoreGraphics.framework */,
@@ -94,17 +118,15 @@
 		BEFBBF64174C64BD00994175 /* MangoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				BEFBBF80174C64BD00994175 /* SecondViewController.h */,
+				BEFBBF81174C64BD00994175 /* SecondViewController.m */,
+				BEFBBF79174C64BD00994175 /* FirstViewController.h */,
+				BEFBBF7A174C64BD00994175 /* FirstViewController.m */,
+				BEFF4283175328B4004E4394 /* view */,
+				BEFF427D17530606004E4394 /* model */,
 				BEFBBF6D174C64BD00994175 /* AppDelegate.h */,
 				BEFBBF6E174C64BD00994175 /* AppDelegate.m */,
 				BEFBBF76174C64BD00994175 /* MainStoryboard.storyboard */,
-				BEFBBF79174C64BD00994175 /* FirstViewController.h */,
-				BEFBBF7A174C64BD00994175 /* FirstViewController.m */,
-				BEFBBF7C174C64BD00994175 /* first.png */,
-				BEFBBF7E174C64BD00994175 /* first@2x.png */,
-				BEFBBF80174C64BD00994175 /* SecondViewController.h */,
-				BEFBBF81174C64BD00994175 /* SecondViewController.m */,
-				BEFBBF83174C64BD00994175 /* second.png */,
-				BEFBBF85174C64BD00994175 /* second@2x.png */,
 				BEFBBF65174C64BD00994175 /* Supporting Files */,
 			);
 			path = MangoPicker;
@@ -113,6 +135,10 @@
 		BEFBBF65174C64BD00994175 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEFBBF7C174C64BD00994175 /* first.png */,
+				BEFBBF7E174C64BD00994175 /* first@2x.png */,
+				BEFBBF83174C64BD00994175 /* second.png */,
+				BEFF4281175328A9004E4394 /* second@2x.png */,
 				BEFBBF66174C64BD00994175 /* MangoPicker-Info.plist */,
 				BEFBBF67174C64BD00994175 /* InfoPlist.strings */,
 				BEFBBF6A174C64BD00994175 /* main.m */,
@@ -122,6 +148,33 @@
 				BEFBBF74174C64BD00994175 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEFF427D17530606004E4394 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BEFF42931753536D004E4394 /* Benefit.h */,
+				BEFF42941753536D004E4394 /* Benefit.m */,
+				BEFF427E17530653004E4394 /* ZFDataManager.h */,
+				BEFF427F17530653004E4394 /* ZFDataManager.m */,
+				BEFF428D175345DB004E4394 /* MangoPickerDB.xcdatamodeld */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		BEFF4283175328B4004E4394 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BEFF428417532C4C004E4394 /* BenefitListViewController.h */,
+				BEFF428517532C4C004E4394 /* BenefitListViewController.m */,
+				BEFF428717533066004E4394 /* BenefitCell.h */,
+				BEFF428817533066004E4394 /* BenefitCell.m */,
+				BE96D75C1755D76100033D74 /* DetailBenefitViewController.h */,
+				BE96D75D1755D76100033D74 /* DetailBenefitViewController.m */,
+				BE96D76217573C6700033D74 /* EditBenefitViewController.h */,
+				BE96D76317573C6700033D74 /* EditBenefitViewController.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +236,7 @@
 				BEFBBF7D174C64BD00994175 /* first.png in Resources */,
 				BEFBBF7F174C64BD00994175 /* first@2x.png in Resources */,
 				BEFBBF84174C64BD00994175 /* second.png in Resources */,
-				BEFBBF86174C64BD00994175 /* second@2x.png in Resources */,
+				BEFF4282175328A9004E4394 /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +251,13 @@
 				BEFBBF6F174C64BD00994175 /* AppDelegate.m in Sources */,
 				BEFBBF7B174C64BD00994175 /* FirstViewController.m in Sources */,
 				BEFBBF82174C64BD00994175 /* SecondViewController.m in Sources */,
+				BEFF428017530653004E4394 /* ZFDataManager.m in Sources */,
+				BEFF428617532C4C004E4394 /* BenefitListViewController.m in Sources */,
+				BEFF428917533066004E4394 /* BenefitCell.m in Sources */,
+				BEFF428F175345DB004E4394 /* MangoPickerDB.xcdatamodeld in Sources */,
+				BEFF42951753536D004E4394 /* Benefit.m in Sources */,
+				BE96D75E1755D76100033D74 /* DetailBenefitViewController.m in Sources */,
+				BE96D76417573C6700033D74 /* EditBenefitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +380,22 @@
 				BEFBBF8B174C64BD00994175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEFF428D175345DB004E4394 /* MangoPickerDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEFF428E175345DB004E4394 /* MangoPickerDB.xcdatamodel */,
+			);
+			currentVersion = BEFF428E175345DB004E4394 /* MangoPickerDB.xcdatamodel */;
+			path = MangoPickerDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BEFBBF53174C64BD00994175 /* Project object */;
 }
