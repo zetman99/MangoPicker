@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="648" y="-218"/>
         </scene>
-        <!--Benefit List View Controller - First-->
+        <!--View Controller - First-->
         <scene sceneID="11">
             <objects>
-                <viewController title="First" id="2" customClass="BenefitListViewController" sceneMemberID="viewController">
+                <viewController title="First" id="2" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9hd-Rj-Qff">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1200" y="-218"/>
         </scene>
-        <!--Table View Controller - New Benefit-->
+        <!--Edit Benefit View Controller - New Benefit-->
         <scene sceneID="j7c-fH-3Bl">
             <objects>
-                <tableViewController id="7ZV-Zp-LIW" sceneMemberID="viewController">
+                <tableViewController id="7ZV-Zp-LIW" customClass="EditBenefitViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Vi3-2H-0TN">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +242,11 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="g48-ZM-o8A"/>
+                                                <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="g48-ZM-o8A">
+                                                    <connections>
+                                                        <action selector="onChangeValueStepper:" destination="7ZV-Zp-LIW" eventType="valueChanged" id="BIn-WG-dKI"/>
+                                                    </connections>
+                                                </stepper>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -265,9 +269,25 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Benefit" id="1e9-Yf-osd">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I7m-FL-aQ4"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qoT-Ny-JDr"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I7m-FL-aQ4">
+                            <connections>
+                                <action selector="onCancel:" destination="7ZV-Zp-LIW" id="Wqo-vJ-GKy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qoT-Ny-JDr">
+                            <connections>
+                                <action selector="onSave:" destination="7ZV-Zp-LIW" id="ddh-A9-Q50"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cardEdit" destination="bIf-1I-i38" id="jby-Sj-PsG"/>
+                        <outlet property="conditionEdit" destination="EgM-Ks-PfS" id="tNI-ax-3oP"/>
+                        <outlet property="countEdit" destination="pOS-3o-bnq" id="eng-ps-48H"/>
+                        <outlet property="countStepper" destination="g48-ZM-o8A" id="cai-Vf-3mN"/>
+                        <outlet property="detailEdit" destination="uut-3a-uJB" id="Xe6-xg-8La"/>
+                        <outlet property="titleEdit" destination="vKq-kD-kIf" id="t5S-4U-xj1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dnD-e3-Win" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -804,6 +824,20 @@
         </class>
         <class className="DetailBenefitViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailBenefitViewController.h"/>
+        </class>
+        <class className="EditBenefitViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditBenefitViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onCancel:"/>
+                <relationship kind="action" name="onChangeValueStepper:"/>
+                <relationship kind="action" name="onSave:"/>
+                <relationship kind="outlet" name="cardEdit" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="conditionEdit" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="countEdit" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="countStepper" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="detailEdit" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="titleEdit" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

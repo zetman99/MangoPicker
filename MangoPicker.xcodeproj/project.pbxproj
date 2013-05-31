@@ -34,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE33534217587F67003388BA /* EditBenefitDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditBenefitDelegate.h; sourceTree = "<group>"; };
 		BE96D75C1755D76100033D74 /* DetailBenefitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailBenefitViewController.h; sourceTree = "<group>"; };
 		BE96D75D1755D76100033D74 /* DetailBenefitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailBenefitViewController.m; sourceTree = "<group>"; };
 		BE96D76217573C6700033D74 /* EditBenefitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBenefitViewController.h; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 				BE96D75D1755D76100033D74 /* DetailBenefitViewController.m */,
 				BE96D76217573C6700033D74 /* EditBenefitViewController.h */,
 				BE96D76317573C6700033D74 /* EditBenefitViewController.m */,
+				BE33534217587F67003388BA /* EditBenefitDelegate.h */,
 			);
 			name = view;
 			sourceTree = "<group>";

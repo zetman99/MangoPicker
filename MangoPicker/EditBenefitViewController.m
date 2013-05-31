@@ -7,18 +7,34 @@
 //
 
 #import "EditBenefitViewController.h"
+#import "EditBenefitDelegate.h"
 
-@interface EditBenefitViewController ()
+@interface EditBenefitViewController (Private)
+
+-(BOOL)validate;
 
 @end
 
+
 @implementation EditBenefitViewController
+
+@synthesize titleEdit = _titleEdit;
+@synthesize cardEdit = _cardEdit;
+@synthesize conditionEdit = _conditionEdit;
+@synthesize detailEdit = _detailEdit;
+@synthesize countEdit = _countEdit;
+@synthesize countStepper = _countStepper;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize benefit = _benefit;
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        _isAddMode = false;
     }
     return self;
 }
@@ -41,21 +57,23 @@
 }
 
 #pragma mark - Table view data source
-
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
-
+*/
+/*
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }
-
+*/
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -65,7 +83,7 @@
     
     return cell;
 }
-
+*/
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,4 +136,56 @@
      */
 }
 
+#pragma mark - public method
+- (void) setAddMode:(BOOL)mode
+{
+    _isAddMode = mode;
+}
+
+#pragma mark - private method
+-(BOOL)validate
+{
+    if ([self.titleEdit.text length] < 1) {
+        return NO;
+    }
+    
+    
+    
+    return YES;
+}
+
+#pragma mark - IBAction implements
+- (IBAction)onChangeValueStepper:(id)sender {
+    int value = _countStepper.value;
+    NSLog(@"onChangeValueStepper %d", value);
+    _countEdit.text = [NSString stringWithFormat:@"%d", value];
+}
+
+- (IBAction)onSave:(id)sender
+{
+    // input data validation
+    if (![self validate])
+    {
+        // message
+        
+        return;
+    }
+    
+    if (_isAddMode)
+    {
+        // Create and Add Benefit
+    }
+    else
+    {
+        // modify Benefit
+    }
+    
+    // back to pre View Controller
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)onCancel:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

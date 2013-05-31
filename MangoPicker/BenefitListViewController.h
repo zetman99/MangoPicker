@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ZFDataManager.h"
+#import "EditBenefitDelegate.h"
 
-@interface BenefitListViewController : UITableViewController
+@interface BenefitListViewController : UITableViewController <NSFetchedResultsControllerDelegate, EditBenefitDelegate>
 
 @property (weak, nonatomic) ZFDataManager * dataManager;
 
