@@ -19,10 +19,8 @@
 		BEFBBF73174C64BD00994175 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF72174C64BD00994175 /* Default@2x.png */; };
 		BEFBBF75174C64BD00994175 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF74174C64BD00994175 /* Default-568h@2x.png */; };
 		BEFBBF78174C64BD00994175 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF76174C64BD00994175 /* MainStoryboard.storyboard */; };
-		BEFBBF7B174C64BD00994175 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFBBF7A174C64BD00994175 /* FirstViewController.m */; };
 		BEFBBF7D174C64BD00994175 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF7C174C64BD00994175 /* first.png */; };
 		BEFBBF7F174C64BD00994175 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF7E174C64BD00994175 /* first@2x.png */; };
-		BEFBBF82174C64BD00994175 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFBBF81174C64BD00994175 /* SecondViewController.m */; };
 		BEFBBF84174C64BD00994175 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFBBF83174C64BD00994175 /* second.png */; };
 		BEFF428017530653004E4394 /* ZFDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFF427F17530653004E4394 /* ZFDataManager.m */; };
 		BEFF4282175328A9004E4394 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFF4281175328A9004E4394 /* second@2x.png */; };
@@ -53,12 +51,8 @@
 		BEFBBF72174C64BD00994175 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BEFBBF74174C64BD00994175 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BEFBBF77174C64BD00994175 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BEFBBF79174C64BD00994175 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BEFBBF7A174C64BD00994175 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		BEFBBF7C174C64BD00994175 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BEFBBF7E174C64BD00994175 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		BEFBBF80174C64BD00994175 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BEFBBF81174C64BD00994175 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BEFBBF83174C64BD00994175 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BEFF427E17530653004E4394 /* ZFDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDataManager.h; sourceTree = "<group>"; };
 		BEFF427F17530653004E4394 /* ZFDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDataManager.m; sourceTree = "<group>"; };
@@ -119,10 +113,6 @@
 		BEFBBF64174C64BD00994175 /* MangoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				BEFBBF80174C64BD00994175 /* SecondViewController.h */,
-				BEFBBF81174C64BD00994175 /* SecondViewController.m */,
-				BEFBBF79174C64BD00994175 /* FirstViewController.h */,
-				BEFBBF7A174C64BD00994175 /* FirstViewController.m */,
 				BEFF4283175328B4004E4394 /* view */,
 				BEFF427D17530606004E4394 /* model */,
 				BEFBBF6D174C64BD00994175 /* AppDelegate.h */,
@@ -251,8 +241,6 @@
 			files = (
 				BEFBBF6B174C64BD00994175 /* main.m in Sources */,
 				BEFBBF6F174C64BD00994175 /* AppDelegate.m in Sources */,
-				BEFBBF7B174C64BD00994175 /* FirstViewController.m in Sources */,
-				BEFBBF82174C64BD00994175 /* SecondViewController.m in Sources */,
 				BEFF428017530653004E4394 /* ZFDataManager.m in Sources */,
 				BEFF428617532C4C004E4394 /* BenefitListViewController.m in Sources */,
 				BEFF428917533066004E4394 /* BenefitCell.m in Sources */,
