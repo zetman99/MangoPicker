@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BenefitCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *title;
-@property (strong, nonatomic) IBOutlet UILabel *count;
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UILabel *count;
+@property (weak, nonatomic) IBOutlet UILabel *card;
 
 @end

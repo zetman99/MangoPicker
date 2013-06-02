@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "EditBenefitViewController.h"
 #import "Benefit.h"
+#import "BenefitCell.h"
 
 @interface BenefitListViewController ()
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
@@ -85,13 +86,19 @@
 {
     // Configure the cell to show the book's title
     Benefit *benefit = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = benefit.title;
+    //cell.textLabel.text = benefit.title;
+    
+    BenefitCell *benefitCell = (BenefitCell *)cell;
+    
+    benefitCell.title.text = benefit.title;
+    benefitCell.card.text = benefit.card;
+    benefitCell.count.text = [NSString stringWithFormat:@"%d회 사용", [benefit.used intValue]];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"BenefitCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...

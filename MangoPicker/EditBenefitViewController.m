@@ -167,13 +167,23 @@
     if (![self validate])
     {
         // message
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"입력 오류" message:@"입력 내용을 확인하세요" delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
         
+        [alert show];
         return;
     }
+    
+    // value modify...
+    self.benefit.title = self.titleEdit.text;
+    self.benefit.card = self.cardEdit.text;
+    self.benefit.condition = self.conditionEdit.text;
+    self.benefit.used = [NSNumber numberWithDouble:self.countStepper.value];
+    
     
     if (_isAddMode)
     {
         // Create and Add Benefit
+        [self.delegate saveBenefit:self];
     }
     else
     {
